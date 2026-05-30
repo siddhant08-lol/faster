@@ -6,6 +6,9 @@
     font-family:"poppins", sans-serif;
 
 }
+html{
+    scroll-behavior:smooth;
+}
 body{
     background:#f2f2f2;
 }
@@ -170,10 +173,12 @@ section .card p{
 }
 .contact .row{
     margin:60px 0 90px;
+    justify-content:space-between;
 
 }
 .contact .row .col{
     padding: 0 10px;
+    width:calc(100% / 2- 50px);
 
 }
 .contact .row .col p {
@@ -183,4 +188,107 @@ section .card p{
 .contact .row .col p i {
     margin-right:10px;
 
+}
+.contact form input{
+    width:100%;
+    height:45px;
+    margin-bottom:20px;
+    padding:0 15px;
+    border:1px solid #bfbfbf;
+    outline:none;
+
+
+
+}
+.contact form textarea{
+    padding:15px;
+    width:100%;
+    height:150px;
+    outline:none;
+    resize:none;
+    border:1px solid #bfbfbf;
+}
+.contact form button{
+    padding:10px 20px;
+    border-radius:6px;
+    font-size:17px;
+    color:#fff;
+    margin-top:10px;
+    border:none;
+    background:#333;
+    cursor:pointer;
+    transition:0.2s;
+
+}
+.contact form button:hover{
+    background:#525252;
+}
+.footer{
+    background:#333;
+    padding:20px 0;
+}
+.footer span{
+color:#fff;
+
+
+}
+#menu-toggler, #ham-btn{
+    display:none;
+
+}
+
+
+
+@media (width < 860px){
+    .navbar .nav-links{
+        position:fixed;
+        left:0;
+        top:65px;
+        height:100%;
+        display:block;
+        background:#333;
+        width:300px;
+        padding-left:20px;
+        padding-top:30px;
+        left:-100%;
+        transition: all 0.4s ease;
+
+    }
+    #menu-toggler:checked ~ .nav-links{
+        left:0;
+    }
+    .nav-links li{
+        font-size:18px;
+    }
+    #ham-btn{
+        display:block;
+        color:#fff;
+        font-size:22px;
+        cursor:pointer;
+    }
+    section .cards .card{
+        width:calc(100% / 2 - 15px);
+    }
+    .contact .row{
+        flex-direction:column;
+
+    }
+    .contact .row .col{
+        width:100%;
+    }
+    .contact .row .col:last-child{
+        margin-top:40px;
+
+    }
+}
+@media(width < 560px){
+    section .cards .card{
+        width:100%;
+    }
+    .homepage .text h1{
+        font-size:30px;
+    }
+    section h2{
+        font-size:1.5rem;
+    }
 }
