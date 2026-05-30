@@ -1,4 +1,6 @@
 #camping-website
+
+
 A full-width hero landing page built with a dark navigation bar and a full-bleed background photo of campers gathered around a campfire.
 The layout is clean and centered designed to evoke an adventurous outdoor atmosphere
 
