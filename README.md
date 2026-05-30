@@ -12,3 +12,6 @@ The technology used are:
  - css
 
    the screenshot of the website:<img width="1366" height="768" alt="Screenshot (10)" src="https://github.com/user-attachments/assets/2eb60692-2dc2-4e97-9db6-57fddd5ff558" />
+
+
+   demo:https://siddhant-website-bay.vercel.app/
